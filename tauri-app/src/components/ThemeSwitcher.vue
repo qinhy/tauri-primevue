@@ -3,9 +3,9 @@
         <ul class="flex list-none m-0 p-0 gap-2 items-center">
             <li>
                 <button type="button"
-                    class="inline-flex w-8 h-8 p-0 items-center justify-center surface-0 dark:surface-800 border border-surface-200 dark:border-surface-600 rounded"
+                    class="inline-flex w-8 h-8 p-0 items-center justify-center surface-0 border border-surface-200 rounded"
                     @click="onThemeToggler">
-                    <i :class="`dark:text-white pi ${iconClass}`" />
+                    <i :class="`pi ${iconClass}`" />
                 </button>
             </li>
             <li class="relative">
@@ -13,12 +13,11 @@
                 @click="()=>isPanelVisible=!isPanelVisible"
                 type="button"
                 class="inline-flex w-8 h-8 p-0 items-center justify-center 
-                        surface-0 dark:surface-800 border border-surface-200 
-                        dark:border-surface-600 rounded">
-                <i class="pi pi-palette dark:text-white"></i>
+                        surface-0 border border-surface-200 
+                        rounded">
+                <i class="pi pi-palette "></i>
                 </button>
-                <div v-if="isPanelVisible"
-                    class="absolute top-[2.5rem] right-0 w-[16rem] p-3 bg-white dark:bg-surface-800 rounded-md shadow border border-surface-200 dark:border-surface-700 flex-col justify-start items-start gap-3.5 inline-flex origin-top z-10">
+                <Panel v-if="isPanelVisible">
                     <div class="flex-col justify-start items-start gap-2 inline-flex pr-4">
                         <span class="text-sm font-medium">Primary Colors</span>
                         <div class="self-stretch justify-start items-start gap-2 inline-flex flex-wrap">
@@ -55,7 +54,7 @@
                         <span class="text-sm font-medium m-0">Ripple Effect</span>
                         <ToggleSwitch :modelValue="rippleActive" @update:modelValue="onRippleChange" />
                     </div>
-                </div>
+                </Panel>
             </li>
         </ul>
     </div>
