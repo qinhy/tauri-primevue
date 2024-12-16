@@ -131,3 +131,4 @@ dist
 /tauri-app/.vscode
 tauri-app/package-lock.json
 tauri-app/yarn.lock
+.DS_Store
