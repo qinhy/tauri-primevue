@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/tauri-app/.vscode
+tauri-app/package-lock.json
+tauri-app/yarn.lock
