@@ -132,3 +132,4 @@ dist
 tauri-app/package-lock.json
 tauri-app/yarn.lock
 .DS_Store
+/tauri-app/src-tauri/gen
