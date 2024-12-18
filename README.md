@@ -34,7 +34,7 @@ Before using this template, ensure you have the following installed:
 3. Start the development server:
 
    ```bash
-   yarn tauri dev
+   cd tauri-app && yarn tauri dev
    ```
 
 ## Scripts
